@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">ATP</string>
+    <string name="title_activity_content">Content</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="my_products">My Products</string>
+    <string name="purchase">Purchase</string>
+    <string name="product_name">Product Name</string>
+    <string name="qty">Qty</string>
+    <string name="unit_price">Price</string>
+    <string name="line_total">Total</string>
+
+    <string-array name="feedback_cat">
+        <item>Appraisal</item>
+        <item>Complaints</item>
+        <item>Suggestion</item>
+
+    </string-array>
+
+    <string-array name="day_filter">
+        <item>ALL</item>
+        <item>15 days</item>
+        <item>30 days</item>
+        <item>45 days</item>
+        <item>60 days</item>
+        <item>90 days</item>
+    </string-array>
+    <string-array name="currency_arrays">
+        <item>ZAR</item>
+    </string-array>
+    <string-array name="run_date">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+
+    </string-array>
+    <string-array name="repeat_times">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="disclaimer"><![CDATA[<p style="text-align:justify">This app provides access to ATP clients, you are not allowed to make use of another person\'s access credentials to access this portal. If you need access please talk to your manager regarding that. We track every action you take on this portal, please be sure you remain inside the parameters as per the contract concluded with your organisation. If you need any assistance please send an email to cpp@advancedtechnologypartner.com</p>]]></string>
+    <string name="title_activity_process_payment">ProcessPayment</string>
+
+
+    <string name="msg_subscribed">Subscribed to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">hello</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="pusher_key">17f481d1-52a5-44e1-9b57-aa14fdc8e52e</string>
+    <string name="pusher_auth_key">FCF648F8A879F19D7591F583F5C578644EEFBD115CBCC0473908D6C295B6410A</string>
+    <string name="pusher_notify_endpoint">https://17f481d1-52a5-44e1-9b57-aa14fdc8e52e.pushnotifications.pusher.com/publish_api/v1/instances/17f481d1-52a5-44e1-9b57-aa14fdc8e52e/publishes</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="internal_storage">Internal storage</string>
+
+    <!-- Strings related to Settings -->
+
+
+</resources>

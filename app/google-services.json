@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "436101270984",
+    "firebase_url": "https://atpproducts-a2381.firebaseio.com",
+    "project_id": "atpproducts-a2381",
+    "storage_bucket": "atpproducts-a2381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436101270984:android:b5a806212ab71a9f",
+        "android_client_info": {
+          "package_name": "za.co.atpsa.atp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436101270984-limtdaipqc29d1ludddi3e24rrarkd8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAApuR5DoHs8-5pGqq4UrMIacLCfAqh6S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436101270984-limtdaipqc29d1ludddi3e24rrarkd8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

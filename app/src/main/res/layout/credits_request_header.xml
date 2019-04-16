@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@drawable/title_bg">
+
+
+
+
+        <ImageView
+
+            android:id="@+id/avatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_search_white_24dp"
+
+
+            />
+        <LinearLayout
+            android:layout_width=".50dp"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="3dp"
+            android:background="#fff"
+            android:layout_gravity="center_vertical"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".75"
+            android:textColorHint="@color/colorWhite"
+            android:hint="Search"
+            android:textColor="#fff"
+
+            android:layout_marginLeft="12dp"
+            android:textSize="11dp"
+            android:id="@+id/search"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorWhite"
+            />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:layout_gravity="bottom|right"
+                android:id="@+id/day_filter"
+                app:backgroundTint="@color/colorWhite"
+                android:padding="1dp"
+                android:layout_marginTop="2dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:layout_gravity="center_vertical"
+            android:text="Date"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:layout_gravity="center_vertical"
+            android:text="Product"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:layout_gravity="center_vertical"
+            android:text="Ref#"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:layout_gravity="center_vertical"
+            android:text="User"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:layout_gravity="center"
+            android:text="Credits"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
