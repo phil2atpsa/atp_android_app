@@ -106,6 +106,7 @@ public class CreditCard extends AppCompatActivity implements OnServiceResponseLi
         desc = desc.concat(" Ref# ").concat(ref);
         description.setText(desc);
         amount.setText(currency.concat(" ").concat(String.valueOf(total_amount)));
+        setTitle("Card Payment");
 
 
 
