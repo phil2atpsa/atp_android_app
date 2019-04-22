@@ -3,6 +3,7 @@ package za.co.atpsa.atp.fragments.evs;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
@@ -21,6 +22,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.prefs.Preferences;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -76,6 +78,9 @@ public class IDCheck extends Fragment implements View.OnClickListener, OnService
         addresses = mView.findViewById(R.id.addresses);
         title_addresses = mView.findViewById(R.id.title_addresses);
 
+
+       // SharedPreferences p2 = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
         if(spref.contains("id_number")
                 && spref.contains("name")
                 && spref.contains("surname")){
@@ -84,6 +89,8 @@ public class IDCheck extends Fragment implements View.OnClickListener, OnService
             id_number.setText(spref.getString("id_number",""));
             surname.setText(spref.getString("surname",""));
             search_btn.callOnClick();
+
+
         }
 
         return mView;
@@ -650,7 +657,9 @@ public class IDCheck extends Fragment implements View.OnClickListener, OnService
         } catch (JSONException e) {
            // e.printStackTrace();
         }
-        editor.remove("name").remove("id_number").remove("surname").commit();
+       // editor.remove("name").remove("id_number").remove("surname").commit();
+
+      //  PreferenceManager.getDefaultSharedPreferences(getActivity()).edit().remove("name").remove("id_number").remove("surname").commit();
     }
 
     @Override

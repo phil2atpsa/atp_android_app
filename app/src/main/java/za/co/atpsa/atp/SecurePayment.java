@@ -72,6 +72,27 @@ public class SecurePayment extends AppCompatActivity {
         webView = findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true); // enable javascript
 
+        webView.setWebViewClient(new WebViewClient() {
+
+
+            @SuppressWarnings("deprecation")
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+
+            @TargetApi(Build.VERSION_CODES.N)
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+
+                return false;
+            }
+        });
+
+
+
+
+
         if(bundle.getString("redirect") != null)
             webView.loadUrl( bundle.getString("redirect"));
 

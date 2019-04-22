@@ -43,7 +43,7 @@ import za.co.atpsa.atp.fragments.Donation;
 import za.co.atpsa.atp.fragments.Evs;
 import za.co.atpsa.atp.fragments.FeedBack;
 import za.co.atpsa.atp.fragments.MiniBill;
-import za.co.atpsa.atp.fragments.ProductList;
+import za.co.atpsa.atp.fragments.Dashboard;
 
 import za.co.atpsa.atp.fragments.Report;
 import za.co.atpsa.products.Products;
@@ -286,8 +286,9 @@ public class Content extends AppCompatActivity
                 editor.putInt("selected_menu", 888).commit();
                 loadFragment("feedback", null);
                 break;
+            case -1 :
             default:
-                loadFragment("products", null);
+                loadFragment("dashboard", null);
                 break;
         }
 
@@ -304,10 +305,16 @@ public class Content extends AppCompatActivity
 
        // menu.Menu.NONE,0, 0, "Home"
 
-        final SubMenu products  =  menu.addSubMenu(Menu.CATEGORY_CONTAINER,1000,0,"My Products");
+
+        MenuItem dashboard = menu.add(Menu.CATEGORY_CONTAINER,-1, 0, "Dashboard");
+        dashboard.setIcon(R.drawable.ic_dashboard_black_24dp);
+
+
+
+        final SubMenu products  =  menu.addSubMenu(Menu.CATEGORY_CONTAINER,1000,1,"My Products");
 
         //final MenuItem menuItem = menu.add(0,0, 0, "My Products");
-        menu.getItem(0).setIcon(R.drawable.ic_paid_black_24dp);
+      //  menu.getItem(0).setIcon(R.drawable.ic_paid_black_24dp);
 
        // products.setHeaderIcon(R.drawable.ic_paid_black_24dp);
        // products.setHeaderTitle("My Products");
@@ -413,9 +420,9 @@ public class Content extends AppCompatActivity
         if (bundle != null)
             f.setArguments(bundle);
 
-        if("products".equals(name)){
-            f = new ProductList();
-            setTitle("Products");
+        if("dashboard".equals(name)){
+            f = new Dashboard();
+            setTitle("Dashboard");
         }
         if("report".equals(name)){
             f = new Report();

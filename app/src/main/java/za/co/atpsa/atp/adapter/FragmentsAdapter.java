@@ -49,4 +49,9 @@ public class FragmentsAdapter extends FragmentStatePagerAdapter {
     public String getPageTitle(int position) {
         return titles.get(position);
     }
+
+    @Override
+    public int getItemPosition(Object object) {
+        return POSITION_NONE;
+    }
 }

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
@@ -22,6 +23,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.prefs.Preferences;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -73,6 +75,8 @@ public class TelephoneCheck extends Fragment implements View.OnClickListener, On
         spref = getActivity().getSharedPreferences(PREFERENCE, Context.MODE_PRIVATE);
         editor = spref.edit();
         parent = mMainView.findViewById(R.id.parent);
+
+
 
 
 
@@ -169,13 +173,17 @@ public class TelephoneCheck extends Fragment implements View.OnClickListener, On
 
     @Override
     public void onSearchRequested(String id_number, String name, String surname) {
+        editor.remove("name").remove("id_number").remove("surname").commit();
 
+        Log.e("id_number",id_number);
 
-        editor.putString("id_number",id_number)
-        .putString("name", name)
-        .putString("surname", surname).commit();
+        editor
+                .putString("id_number",id_number)
+                .putString("name", name)
+                .putString("surname", surname).commit();
 
         Evs evs =  (Evs) TelephoneCheck.this.getParentFragment();
+
         evs.selectPage(1);
 
     }

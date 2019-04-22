@@ -24,6 +24,8 @@ public class Evs extends Fragment implements ViewPager.OnPageChangeListener {
     public static final String PREFERENCE= "ATP";
     private SharedPreferences spref;
     private SharedPreferences.Editor editor;
+    FragmentsAdapter fragmentsAdapter;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.evs,
@@ -37,7 +39,7 @@ public class Evs extends Fragment implements ViewPager.OnPageChangeListener {
         Fragment telephoneCheck = new TelephoneCheck();
         Fragment id_check = new IDCheck();
 
-        FragmentsAdapter fragmentsAdapter =  new FragmentsAdapter(getChildFragmentManager(), getActivity());
+        fragmentsAdapter =  new FragmentsAdapter(getChildFragmentManager(), getActivity());
         fragmentsAdapter.addFragment(telephoneCheck, "Telephone Trace");
         fragmentsAdapter.addFragment(id_check, "Consumer Trace");
 

@@ -16,7 +16,7 @@ import za.co.atpsa.atp.R;
 import za.co.atpsa.atp.adapter.ProductBalanceAdapter;
 import za.co.atpsa.atp.entities.ProductBalance;
 
-public class ProductList extends Fragment {
+public class Dashboard extends Fragment {
     RecyclerView mRecycler;
     ProductBalanceAdapter productBalanceAdapter;
     SwipeRefreshLayout swiper;
